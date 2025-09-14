@@ -23,9 +23,9 @@ To install this plugin, you will need R, RKWard, and the `devtools` and `rkwardd
  **Install the Package:**
     Finally, install the plugin package using `devtools`:
 
-    ```{r}
+```{r}
     
-    local({
+local({
 ## Preparar
 require(devtools)
 ## Computar
@@ -36,7 +36,7 @@ require(devtools)
 rk.header ("Resultados de Instalar desde git")
 })
 
-    ```
+```
 
  **Restart RKWard:**
     Close and reopen RKWard. The new plugin will be available in the top menu.
