@@ -22,7 +22,9 @@ To install this plugin, you will need R, RKWard, and the `devtools` and `rkwardd
 
  **Install the Package:**
     Finally, install the plugin package using `devtools`:
-    ```R
+
+    ```{r}
+    
     local({
 ## Preparar
 require(devtools)
@@ -33,6 +35,7 @@ require(devtools)
 ## Imprimir el resultado
 rk.header ("Resultados de Instalar desde git")
 })
+
     ```
 
  **Restart RKWard:**
