@@ -19,25 +19,23 @@ An RKWard plugin that provides a graphical user interface (GUI) for the base R f
 
 To install this plugin, you will need R, RKWard, and the `devtools` and `rkwarddev` packages installed.
 
-1.  **Generate the Plugin Files:**
-    Save the R script that creates the plugin as `make_plugin.R`. Open R within RKWard and run the script from the source. This will create a plugin package folder named `rk.gsub.sub`.
-    ```R
-    source("make_plugin.R")
-    ```
 
-2.  **Update Plugin Messages:**
-    Run the following command in the R console to prepare the plugin for installation:
-    ```R
-    rk.updatePluginMessages(plugin.dir="rk.gsub.sub")
-    ```
-
-3.  **Install the Package:**
+ **Install the Package:**
     Finally, install the plugin package using `devtools`:
     ```R
-    devtools::install("rk.gsub.sub")
+    local({
+## Preparar
+require(devtools)
+## Computar
+  install_github(
+    repo="AlfCano/rk.gsub.sub"
+  )
+## Imprimir el resultado
+rk.header ("Resultados de Instalar desde git")
+})
     ```
 
-4.  **Restart RKWard:**
+ **Restart RKWard:**
     Close and reopen RKWard. The new plugin will be available in the top menu.
 
 ## How to Use
