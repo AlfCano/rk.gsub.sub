@@ -1,0 +1,59 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Pattern Replacement (sub/gsub)
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="func_dropdown">
+		</setting>
+		<caption id="frm_Pattern" />
+		<setting id="na_pattern_cbox">
+		</setting>
+		<setting id="pattern_input">
+		</setting>
+		<caption id="frm_Replcmnt" />
+		<setting id="na_cbox">
+		</setting>
+		<setting id="replacement_input">
+		</setting>
+		<setting id="x_varslot">
+		</setting>
+		<caption id="frm_Options" />
+		<setting id="ignorecase_cbox">
+		</setting>
+		<setting id="perl_cbox">
+		</setting>
+		<setting id="fixed_cbox">
+		</setting>
+		<setting id="usebytes_cbox">
+		</setting>
+		<setting id="as_factor_cbox">
+		</setting>
+		<setting id="save_obj">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

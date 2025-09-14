@@ -1,0 +1,50 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="PatternReplacementsubgsub.js" />
+	<help file="PatternReplacementsubgsub.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Pattern Replacement">
+		<row id="row_vFGFPPUNA1">
+			<varselector id="main_var_selector" />
+			<column id="clm_dFGFPPUNA1">
+				<dropdown id="func_dropdown" label="Function to use">
+					<option label="Global replacement (gsub)" value="gsub" checked="true" />
+					<option label="First replacement (sub)" value="sub" />
+				</dropdown>
+				<frame label="Pattern" id="frm_Pattern">
+					<checkbox id="na_pattern_cbox" label="Use NA as pattern" value="1" />
+					<input label="Pattern" id="pattern_input" />
+				</frame>
+				<frame label="Replacement" id="frm_Replcmnt">
+					<checkbox id="na_cbox" label="Use NA as replacement" value="1" />
+					<input label="Replacement" id="replacement_input" />
+				</frame>
+				<varslot id="x_varslot" label="Input character vector (x)" source="main_var_selector" classes="character" required="true" />
+				<frame label="Options" id="frm_Options">
+					<checkbox id="ignorecase_cbox" label="ignore.case" value="1" />
+					<checkbox id="perl_cbox" label="perl" value="1" />
+					<checkbox id="fixed_cbox" label="fixed" value="1" checked="true" />
+					<checkbox id="usebytes_cbox" label="useBytes" value="1" />
+				</frame>
+				<checkbox id="as_factor_cbox" label="Convert result to factor" value="1" />
+				<saveobject label="Save result to" checkable="true" checked="true" initial="replaced.vector" id="save_obj" />
+				<preview label="Preview" id="prv_Preview" mode="data" />
+			</column>
+		</row>
+	</dialog>
+</document>

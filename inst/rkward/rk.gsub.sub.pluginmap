@@ -1,0 +1,77 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="PatternReplacementsubgsub"
+	id="PatternReplacementsubgsub_rkward"
+	po_id="PatternReplacementsubgsub_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.gsub.sub"
+		shortinfo="RKWard GUI for sub() and gsub() to find and replace patterns in character vectors."
+		longinfo="RKWard GUI for sub() and gsub() to find and replace patterns in character vectors."
+		version="0.0.5"
+		releasedate="2025-09-13"
+		url="https://rkward.kde.org"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano Robles"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_PttrnRplcmntsbgsbPttrnRpl"
+			label="Pattern Replacement (sub/gsub)"
+			type="standard"
+			file="plugins/PatternReplacementsubgsub.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="data"
+			label="Data"
+		>
+			<menu
+				id="PatternReplacementsubgsub"
+				label="Pattern Replacement (sub/gsub)"
+			>
+				<entry
+					component="cmp_PttrnRplcmntsbgsbPttrnRpl"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>
