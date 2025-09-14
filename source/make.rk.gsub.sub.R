@@ -13,7 +13,7 @@ require(rkwarddev)
     about = list(
       desc = "RKWard GUI for sub() and gsub() to find and replace patterns in character vectors.",
       version = "0.0.5", # Version bumped for new feature
-      url = "https://rkward.kde.org"
+      url = "https://github.com/AlfCano/rk.gsub.sub"
     )
   )
 
