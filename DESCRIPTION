@@ -12,6 +12,6 @@ Description: RKWard GUI for sub() and gsub() to find and replace
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyLoad: yes
-URL: https://rkward.kde.org
+URL: https://github.com/AlfCano/rk.gsub.sub
 Authors@R: person(given="Alfonso", family="Cano Robles",
         email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

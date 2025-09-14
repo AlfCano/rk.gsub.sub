@@ -22,7 +22,7 @@
 		longinfo="RKWard GUI for sub() and gsub() to find and replace patterns in character vectors."
 		version="0.0.5"
 		releasedate="2025-09-13"
-		url="https://rkward.kde.org"
+		url="https://github.com/AlfCano/rk.gsub.sub"
 		license="GPL (&gt;= 3)"
 	>
 		<author
