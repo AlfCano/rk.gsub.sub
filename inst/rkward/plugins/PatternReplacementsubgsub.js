@@ -92,11 +92,11 @@ function calculate(is_preview){
     if (use_bytes == "1") { rOptions.push("useBytes=TRUE"); }
 
     // Assemble and print the final R command
-    var command = save_name + " <- " + func + "(\n  " + rOptions.join(",\n  ") + "\n)\n";
+    var command = "replaced.vector <- " + func + "(\n  " + rOptions.join(",\n  ") + "\n)\n";
     echo(command);
 
     if (convert_to_factor == "1") {
-      echo(save_name + " <- as.factor(" + save_name + ")\n");
+      echo("replaced.vector <- as.factor(replaced.vector)\n");
     }
   
 }
@@ -108,8 +108,7 @@ function printout(is_preview){
 	// printout the results
 	if(!is_preview) {
 		new Header(i18n("Pattern Replacement (sub/gsub) results")).print();	
-	}
-    if (getValue("save_obj") == "1") {
+	}{
         var header_cmd = "rk.header(\"Pattern replacement results saved to object: " + getValue("save_obj.objectname") + "\", level=3);\n";
         echo(header_cmd);
     }

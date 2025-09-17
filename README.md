@@ -89,4 +89,5 @@ The resulting vector will be `[1] "Red" "Blue" "Unknown" "Green"`.
 
 ## Author
 
-*   Alfonso Cano Robles
+*   Alfonso Cano Robles  
+*   Assited by Gemini a LLM by Google.

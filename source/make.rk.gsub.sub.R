@@ -12,7 +12,7 @@ require(rkwarddev)
     ),
     about = list(
       desc = "RKWard GUI for sub() and gsub() to find and replace patterns in character vectors.",
-      version = "0.0.5", # Version bumped for new feature
+      version = "0.0.6",
       url = "https://github.com/AlfCano/rk.gsub.sub"
     )
   )
@@ -129,11 +129,11 @@ require(rkwarddev)
     if (use_bytes == "1") { rOptions.push("useBytes=TRUE"); }
 
     // Assemble and print the final R command
-    var command = save_name + " <- " + func + "(\\n  " + rOptions.join(",\\n  ") + "\\n)\\n";
+    var command = "replaced.vector <- " + func + "(\\n  " + rOptions.join(",\\n  ") + "\\n)\\n";
     echo(command);
 
     if (convert_to_factor == "1") {
-      echo(save_name + " <- as.factor(" + save_name + ")\\n");
+      echo("replaced.vector <- as.factor(replaced.vector)\\n");
     }
   '
 
@@ -183,8 +183,7 @@ require(rkwarddev)
     echo("preview_data <- data.frame(replaced_vector=preview_vector)\\n");
   '
 
-  js_print <- '
-    if (getValue("save_obj") == "1") {
+  js_print <- '{
         var header_cmd = "rk.header(\\"Pattern replacement results saved to object: " + getValue("save_obj.objectname") + "\\", level=3);\\n";
         echo(header_cmd);
     }
