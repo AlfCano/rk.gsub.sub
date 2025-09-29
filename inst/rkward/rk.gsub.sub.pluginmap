@@ -20,8 +20,8 @@
 		name="rk.gsub.sub"
 		shortinfo="RKWard GUI for sub() and gsub() to find and replace patterns in character vectors."
 		longinfo="RKWard GUI for sub() and gsub() to find and replace patterns in character vectors."
-		version="0.0.6"
-		releasedate="2025-09-16"
+		version="0.0.7"
+		releasedate="2025-09-29"
 		url="https://github.com/AlfCano/rk.gsub.sub"
 		license="GPL (&gt;= 3)"
 	>
@@ -52,14 +52,9 @@
 			id="data"
 			label="Data"
 		>
-			<menu
-				id="PatternReplacementsubgsub"
-				label="Pattern Replacement (sub/gsub)"
-			>
-				<entry
-					component="cmp_PttrnRplcmntsbgsbPttrnRpl"
-				/>
-			</menu>
+			<entry
+				component="cmp_PttrnRplcmntsbgsbPttrnRpl"
+			/>
 		</menu>
 	</hierarchy>
 	<!--

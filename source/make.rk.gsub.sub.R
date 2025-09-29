@@ -12,7 +12,7 @@ require(rkwarddev)
     ),
     about = list(
       desc = "RKWard GUI for sub() and gsub() to find and replace patterns in character vectors.",
-      version = "0.0.6",
+      version = "0.0.7",
       url = "https://github.com/AlfCano/rk.gsub.sub"
     )
   )
@@ -203,7 +203,7 @@ require(rkwarddev)
     rkh = list(help = help_doc),
     pluginmap = list(
       name = "Pattern Replacement (sub/gsub)",
-      hierarchy = list("data", "Pattern Replacement (sub/gsub)")
+      hierarchy = list("data")
     ),
     create = c("pmap", "xml", "js", "desc", "rkh"),
     load = TRUE,
